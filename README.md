@@ -1,5 +1,18 @@
+
 # Std_Management
+
 Student Management System
+
+==========================================
+
+
+# DB Name : std_management
+# DB Info : Apache TomCat v9.0
+# JDBC Info : MySql JDBC 5.1, mysql-connector-java-5.1.47-bin
+            
+
+--------------------------------------------------
+
 
 1. AdminMain.jsp : 관리자가 로그인한 후의 메인화면
 2. Grading.jsp : 성적을 나타내는 화면
@@ -14,8 +27,5 @@ Student Management System
 
 
 
-# DB Name : std_management
-# DB Info : Apache TomCat v9.0
-# JDBC Info : MySql JDBC 5.1, mysql-connector-java-5.1.47-bin
-            
+
 
