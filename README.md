@@ -11,3 +11,11 @@ Student Management System
 8. Subject.jsp : 교과목 정보를 보는 화면
 9. SubjectPlan.jsp : 강의계획서를 보는 
 
+
+
+
+# DB Name : std_management
+# DB Info : Apache TomCat v9.0
+# JDBC Info : MySql JDBC 5.1, mysql-connector-java-5.1.47-bin
+            
+
