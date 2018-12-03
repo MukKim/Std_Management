@@ -38,6 +38,10 @@ table, tr, td {
 	text-align: center;
 	display: none;
 }
+#plan_close{
+	float: right;
+	
+}
 .dead{
 	display: none;
 }
@@ -92,6 +96,7 @@ table, tr, td {
 	<div id = "plan">
 		<button id="plan_close" onclick="plan_close()" onkeypress="if(event.keyCode==27){plan_close();}">닫기</button>
 	<table>
+	
 			<tr>
 			<td>강의정보</td>
 			<td>선행과목</td>

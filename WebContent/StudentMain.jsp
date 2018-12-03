@@ -20,10 +20,8 @@
 		pstmt=conn.prepareStatement(sql);
 		pstmt.setInt(1, student_id);
 		pstmt.execute();
-		str = student_id + " 성공";
 	}catch(Exception e){
 		e.printStackTrace();
-		str="실패";
 	}
 %>
 <!DOCTYPE html>
@@ -33,12 +31,12 @@
 <title>login 화면</title>
 </head>
 <body>
-	<%=str %>
 	<a href="StudentInfo.jsp">학적</a><br/>
 	<a href="Register.jsp">수강 신청</a><br/>
 	<a href="Scholar.jsp">장학생 현황</a><br/>
 	<a href="Grading.jsp">성적표</a><br/>
 	<a href="Subject.jsp">교과목</a><br/>
 	<a href="SubjectPlan.jsp">강의계획서</a><br/>
+	<a href="Logout.jsp">로그아웃</a><br/>
 </body>
 </html>
