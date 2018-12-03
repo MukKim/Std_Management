@@ -3,11 +3,15 @@
 <%@page import="java.sql.*" %>
 
 <% 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 	int student_id = Integer.parseInt(session.getAttribute("sessionid").toString());
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	String str="";
+<<<<<<< HEAD
 	
 	
 	String rpassword = "";
@@ -52,6 +56,20 @@
 	}
 		
 		
+=======
+	try{
+		String jdbUrl = "jdbc:mysql://localhost:3306/std_management";
+		String dbId = "root";
+		String dbPass = "lim0515";
+		Class.forName("com.mysql.jdbc.Driver");
+		conn = DriverManager.getConnection(jdbUrl, dbId, dbPass);
+			
+		String sql = "select * from subject ";
+		pstmt=conn.prepareStatement(sql);
+		pstmt.execute();
+		
+		ResultSet rs = pstmt.executeQuery();
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 		
 %>
 <!DOCTYPE html>
@@ -61,6 +79,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 <form method="post" action="StudentRevise.jsp">
 
 
@@ -111,3 +130,19 @@ function submit_click() {
 
 </body>
 </html>
+=======
+	<%
+	String a = "";
+		while(rs.next()){
+			a = rs.getString("subject_name");
+	}
+	out.print(a);
+		%>
+</body>
+</html>
+<% }catch(Exception e){
+		e.printStackTrace();
+		str="½ÇÆÐ";
+	}
+	%>
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1

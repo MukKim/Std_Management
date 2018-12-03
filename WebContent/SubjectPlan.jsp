@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<<<<<<< HEAD
 <%@page import="java.sql.*" %>
 
 <% 
@@ -47,6 +48,8 @@
 		
 		
 %>
+=======
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,6 +58,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 
 
 
@@ -62,3 +66,7 @@
 
 </body>
 </html>
+=======
+</body>
+</html>
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1

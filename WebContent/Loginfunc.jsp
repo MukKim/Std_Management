@@ -14,6 +14,7 @@
 	
 	LogonDBBean logon = LogonDBBean.getInstance();
 	int check = logon.userCheck(id, passwd);
+<<<<<<< HEAD
 	int admincheck = logon.adminCheck(id, passwd);
 	if(admincheck == 1) {
 		session.setAttribute("sessionid", id);
@@ -44,5 +45,23 @@
 %>
 
 
+=======
+	
+	if(check == 1){
+		session.setAttribute("sessionid", id);
+		session.setAttribute("sessionpw", passwd);
+		response.sendRedirect("StudentMain.jsp");
+	}else if(check == 0){%>
+	<script>
+		alert("비밀번호가 맞지 않습니다.");
+		history.go(-1);
+	</script>
+<%	}else{%>
+	<script>
+		alert("아이디가 맞지 않습니다.");
+		history.go(-1);
+	</script>
+<% }%>
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 </body>
 </html>

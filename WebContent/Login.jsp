@@ -14,4 +14,8 @@
 		<input type="submit" value="·Î±×ÀÎ"> 
 	</form>
 </body>
+<<<<<<< HEAD
 </html>	
+=======
+</html>
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Std_Management</name>
+=======
+<<<<<<< HEAD
+	<name>Lab09</name>
+=======
+	<name>Std_Management</name>
+>>>>>>> 23de58eda6e005aebfd85d094b71f5285e1c12cd
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 	<comment></comment>
 	<projects>
 	</projects>
@@ -10,6 +18,14 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+=======
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 		<buildCommand>
 			<name>org.eclipse.wst.common.project.facet.core.builder</name>
 			<arguments>
@@ -27,5 +43,9 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
+<<<<<<< HEAD
+=======
+>>>>>>> 23de58eda6e005aebfd85d094b71f5285e1c12cd
+>>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 	</natures>
 </projectDescription>
