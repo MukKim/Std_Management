@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<%@page import="java.sql.*" %>
+	pageEncoding="EUC-KR"%>
+<%@page import="java.sql.*"%>
 
 
 
@@ -8,19 +8,12 @@
 	int student_id = Integer.parseInt(session.getAttribute("sessionid").toString());
 	Connection conn = null;
 	PreparedStatement pstmt = null;
-<<<<<<< HEAD
-	String str="";
-	try{
-		String jdbUrl = "jdbc:mysql://localhost:3306/std_management";
-		String dbId = "root";
-		String dbPass = "4821";
-=======
 	String str = "";
+	String name ="";
 	try{
 		String jdbUrl = "jdbc:mysql://localhost:3306/std_management";
 		String dbId = "root";
-		String dbPass = "lim0515";
->>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
+		String dbPass = "1234";
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(jdbUrl, dbId, dbPass);
 			
@@ -28,41 +21,67 @@
 		pstmt=conn.prepareStatement(sql);
 		pstmt.setInt(1, student_id);
 		pstmt.execute();
-<<<<<<< HEAD
-		str=student_id+" 성공";
+		ResultSet rs = pstmt.executeQuery();
+		rs.next();
+		name = rs.getString("name");
 	}catch(Exception e){
 		e.printStackTrace();
-		str="실패";
-=======
-	}catch(Exception e){
-		e.printStackTrace();
->>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 	}
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
+<style>
+body {
+	
+}
+
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	line-height: 200%;
+}
+
+li a {
+	display: block;
+	width: 170px;
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: 10px;
+	text-decoration: none;
+	color: #424242;
+}
+
+li a:hover {
+	color: #0040FF;
+}
+
+#naveli{
+	font-family : Helvetica, sans-serif;
+}
+
+</style>
 <title>login 화면</title>
 </head>
 <body>
-<<<<<<< HEAD
-	<%=str %>
-<a href="StudentInfo.jsp">학적</a>
-   <a href="Register.jsp">수강 신청</a>
-   <a href="Scholar.jsp">장학생 현황</a>
-   <a href="Grading.jsp">성적표</a>
-   <a href="Subject.jsp">교과목</a>
-   <a href="SubjectPlan.jsp">강의계획서</a>
-   <a href="scholar_main.jsp">강의계획서</a>
-=======
-	<a href="StudentInfo.jsp">학적</a><br/>
-	<a href="Register.jsp">수강 신청</a><br/>
-	<a href="Scholar.jsp">장학생 현황</a><br/>
-	<a href="Grading.jsp">성적표</a><br/>
-	<a href="Subject.jsp">교과목</a><br/>
-	<a href="SubjectPlan.jsp">강의계획서</a><br/>
-	<a href="Logout.jsp">로그아웃</a><br/>
->>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
+	<h2>학생 페이지</h2>
+		<ul>
+			<li id="naveli">학번 : <%=student_id %> 이름 : <%=name %></li>
+		</ul>
+	<hr style="width: 400px; float:left;">
+	<ul>
+		<li><a href="StudentInfo.jsp">●학적</a></li>
+		<li><a href="Register.jsp">●수강 신청</a></li>
+		<li><a href="Scholar.jsp">●장학생 현황</a></li>
+		<li><a href="Grading.jsp">●성적표</a></li>
+		<li><a href="Subject.jsp">●교과목</a></li>
+		<li><a href="Logout.jsp">●로그아웃</a></li>
+	</ul>
 </body>
 </html>

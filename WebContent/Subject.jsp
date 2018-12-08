@@ -1,7 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-<<<<<<< HEAD
-    pageEncoding="EUC-KR"%>
-=======
 	pageEncoding="EUC-KR"%>
 <%@page import="java.sql.*"%>
 
@@ -10,11 +7,10 @@
 	int student_id = Integer.parseInt(session.getAttribute("sessionid").toString());
 	Connection conn = null;
 	PreparedStatement pstmt = null;
-	String str = "";
 	try{
 		String jdbUrl = "jdbc:mysql://localhost:3306/std_management";
 		String dbId = "root";
-		String dbPass = "lim0515";
+		String dbPass = "1234";
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(jdbUrl, dbId, dbPass);
 			
@@ -25,19 +21,11 @@
 		ResultSet rs = pstmt.executeQuery();
 	
 %>
->>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<<<<<<< HEAD
-</head>
-<body>
-
-</body>
-</html>
-=======
 <style>
 table, tr, td {
 	border: 1px solid #444444;
@@ -97,7 +85,6 @@ table, tr, td {
 		</tr>
 <% }}catch(Exception e){
 	e.printStackTrace();
-	str="실패";
 }
 	
 %>
@@ -182,7 +169,7 @@ table, tr, td {
 	
 	
 	</div>
-	
+	<a href="StudentMain.jsp">뒤로 가기</a>
 <script>
 	function plan_open(id) { //입력창 띄움
 		var a = "row";
@@ -208,4 +195,3 @@ table, tr, td {
 </html>
 
 
->>>>>>> 7cb2100b538f39f43e660c0821667fbb8ffb4ee1
