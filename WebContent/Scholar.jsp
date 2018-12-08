@@ -39,7 +39,7 @@
 	
 	학번 : <%=student_id %>
 	<table style="border : 1px solid; border-collapse:collapse;">
-		<tr>
+		<tr style="width=100px; height:60px;">
 		<td style="border : 1px solid">구분</td>
 		<td style="border : 1px solid">장학금명</td>
 		<td style="border : 1px solid">장학학기</td>

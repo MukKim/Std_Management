@@ -22,6 +22,12 @@
 <head>
 <meta charset="EUC-KR">
 <title>login 화면</title>
+<style>
+body{
+	text-align:center;
+	font-family: Helvetica, Arial, sans-serif;
+}
+</style>
 </head>
 <body>
 	<h1>관리자 페이지</h1>

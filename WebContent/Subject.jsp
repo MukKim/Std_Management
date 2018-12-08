@@ -44,10 +44,35 @@ table, tr, td {
 .dead{
 	display: none;
 }
+#customers {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+#customers td, #customers th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+	background-color: #EFFBFB;
+}
+
+#customers tr:hover {
+	background-color: #ddd;
+}
+
+#customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
 </style>
 </head>
 <body>
-	<table>
+	<table id="customers">
 		<tr>
 			<td>학기</td>
 			<td>학수번호</td>
