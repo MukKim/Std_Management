@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <style>
 body{
 	text-align:center;
@@ -48,11 +48,11 @@ span{
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>·Î±×ÀÎÆû</h2>
+	<h2>ë¡œê·¸ì¸í¼</h2>
 	<form method="post" action="Loginfunc.jsp"> 
-		<span>¾ÆÀÌµğ</span> <input type="text" name="id" maxlength="12" placeholder="ÇĞ¹øÀ» ÀÔ·ÂÇÏ¼¼¿ä."><br/> 
-		<span>ÆĞ½º¿öµå</span> <input type="password" name="passwd" maxlength="12" placeholder="ÃÊ±â ºñ¹Ğ¹øÈ£´Â ÇĞ¹ø"><br/>
-		<input type="submit" id="login" value="·Î±×ÀÎ"> 
+		<span>ì•„ì´ë””</span> <input type="text" name="id" maxlength="12" placeholder="í•™ë²ˆì„ ì…ë ¥í•˜ì„¸ìš”."><br/> 
+		<span>íŒ¨ìŠ¤ì›Œë“œ</span> <input type="password" name="passwd" maxlength="12" placeholder="ì´ˆê¸° ë¹„ë°€ë²ˆí˜¸ëŠ” í•™ë²ˆ"><br/>
+		<input type="submit" id="login" value="ë¡œê·¸ì¸"> 
 	</form>
 </body>
 </html>
