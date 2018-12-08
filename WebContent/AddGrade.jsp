@@ -29,11 +29,37 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+
 table, tr, td {
 	border: 1px solid #444444;
 	text-align: center;
 }
 
+#customers {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+#customers td, #customers th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+	background-color: #EFFBFB;
+}
+
+#customers tr:hover {
+	background-color: #ddd;
+}
+
+#customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
 #plan {
 	border: 1px solid #444444;
 	text-align: center;
@@ -46,7 +72,7 @@ table, tr, td {
 </style>
 </head>
 <body>
-	<table>
+	<table id="customers">
 		<tr>
 			<td>학생</td>
 			<td>과목번호</td>

@@ -1,14 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=euc-kr"
-	pageEncoding="euc-kr"%>
-<% request.setCharacterEncoding("euc-kr"); %>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
 <%@page import="java.sql.*"%>
+
+
 
 <% 
 	int student_id = Integer.parseInt(session.getAttribute("sessionid").toString());
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	String str = "";
-	String name = "";
+	String name ="";
 	try{
 		String jdbUrl = "jdbc:mysql://localhost:3306/std_management";
 		String dbId = "root";
@@ -30,7 +31,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="EUC-KR">
 <style>
 body {
 	
