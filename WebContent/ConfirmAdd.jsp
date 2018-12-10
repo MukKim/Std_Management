@@ -12,7 +12,9 @@
 	String birth = request.getParameter("birth");
 	String school = request.getParameter("school");
 	String major = request.getParameter("major");
+	
 
+	
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 

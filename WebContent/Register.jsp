@@ -234,6 +234,8 @@ tr {
 
 
 	</div>
+	
+	<a href="StudentMain.jsp" id="back">뒤로가기</a>
 <script>
 	function plan_open(id) { //입력창 띄움
 		var a = "row";

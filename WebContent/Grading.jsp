@@ -61,6 +61,7 @@ table, tr, td {
 </style>
 </head>
 <body>
+	<h2>성적표</h2>
 	<table id="customers">
 		<tr>
 			<td>학생</td>

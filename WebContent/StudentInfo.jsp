@@ -95,7 +95,7 @@ table{
 </head>
 <body>
 	<h2>학적 정보/수정 페이지</h2>
-	<a href="StudentMain.jsp" id="back">뒤로가기</a>
+	
 	<form method="post" action="StudentRevise.jsp">
 		<table border=2>
 			<tr>
@@ -130,7 +130,7 @@ table{
 	</form>
 	</table>
 
-
+	<a href="StudentMain.jsp" id="back">뒤로가기</a>
 
 	<script>
 		function submit_click() {

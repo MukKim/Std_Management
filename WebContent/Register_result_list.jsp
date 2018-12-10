@@ -36,9 +36,12 @@
 <html>
 <head>
 <style>
+
+
 #customers {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	width: 100%;
+	text-align: center;
 }
 
 #customers td, #customers th {
@@ -120,12 +123,21 @@
 	%>
 	</table>
 	
-	<a href="Register.jsp">뒤로가기</button>
+	
+	<button onclick="popup()">강의 시간표</button>
+	<a href="Register.jsp">뒤로가기</a>
+	
+	<script>
+		function popup(){
+			var url = "popup.jsp";
+			var name = "popup";
+			window.open(url, name, "width=300, height=300, toolbar=no status=no, location=no, scrollbars=yes, menubar=no, resizable=yes, left=50, right=50");
+		}
+	</script>
 </body>
 </html>
 <%
 } catch (Exception e) {
 				e.printStackTrace();
-				str = "실패";
 }
  %>

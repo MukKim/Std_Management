@@ -72,6 +72,7 @@ table, tr, td {
 </style>
 </head>
 <body>
+	<h2>교과목</h2>
 	<table id="customers">
 		<tr>
 			<td>학기</td>
