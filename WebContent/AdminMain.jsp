@@ -33,7 +33,9 @@ body{
 	<h1>관리자 페이지</h1>
 <a href="AddStudent.jsp">●학번부여</a> <br/>
 <a href="AddGrade.jsp">●성적부여</a> <br />
+<a href="AddSubject.jsp">●교과목생성</a> <br />
 <a href="Logout.jsp">●로그아웃</a> <br />
+
 
 </body>
 </html>

@@ -147,7 +147,7 @@
 	%>
 	</table>
 	
-	<a href="Register.jsp">뒤로가기</button>
+	<a href="Register.jsp">뒤로가기</a>
 </body>
 </html>
 <%

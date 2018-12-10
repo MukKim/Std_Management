@@ -36,7 +36,7 @@
 <title>Scholar main</title>
 </head>
 <body>
-	
+	<h2>장학생 현황</h2>
 	학번 : <%=student_id %>
 	<table style="border : 1px solid; border-collapse:collapse;">
 		<tr style="width=100px; height:60px;">
